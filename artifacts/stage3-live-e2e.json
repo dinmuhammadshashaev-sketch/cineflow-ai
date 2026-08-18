@@ -1,0 +1,172 @@
+{
+  "timestamp": "2026-08-15T20:46:49.194Z",
+  "overallStatus": "PASS",
+  "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+  "modelName": "gemini-2.5-flash-lite",
+  "gcpProject": "cineflow-ai-504921",
+  "gcpLocation": "global",
+  "vertexLiveVerified": true,
+  "liveIntegrationStatus": "VERIFIED_COMPLETE",
+  "adkInMemoryRunnerVerified": true,
+  "adkRunAsyncVerified": true,
+  "sequentialAgentVerified": true,
+  "workflowStatus": "COMPLETED",
+  "blockerCategory": null,
+  "blockerError": null,
+  "durationMs": 40367,
+  "sseCounts": {
+    "WORKFLOW_STARTED": 1,
+    "AGENT_STARTED": 8,
+    "AGENT_COMPLETED": 8,
+    "AGENT_FAILED": 0,
+    "TOOL_STARTED": 1,
+    "TOOL_COMPLETED": 1,
+    "WORKFLOW_COMPLETED": 1,
+    "WORKFLOW_FAILED": 0
+  },
+  "agents": [
+    {
+      "agentName": "SupervisorAgent",
+      "agentRole": "Supervisor",
+      "startedAt": "8:46:10 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:13 PM",
+      "durationMs": 2896
+    },
+    {
+      "agentName": "Script AnalystAgent",
+      "agentRole": "Script Analyst",
+      "startedAt": "8:46:13 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:14 PM",
+      "durationMs": 1836
+    },
+    {
+      "agentName": "DirectorAgent",
+      "agentRole": "Director",
+      "startedAt": "8:46:14 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:20 PM",
+      "durationMs": 5302
+    },
+    {
+      "agentName": "ProducerAgent",
+      "agentRole": "Producer",
+      "startedAt": "8:46:20 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:21 PM",
+      "durationMs": 961
+    },
+    {
+      "agentName": "ResearchAgent",
+      "agentRole": "Research",
+      "startedAt": "8:46:21 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:33 PM",
+      "durationMs": 12536
+    },
+    {
+      "agentName": "ContinuityAgent",
+      "agentRole": "Continuity",
+      "startedAt": "8:46:33 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:43 PM",
+      "durationMs": 10277
+    },
+    {
+      "agentName": "RiskAgent",
+      "agentRole": "Risk",
+      "startedAt": "8:46:43 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:49 PM",
+      "durationMs": 5230
+    },
+    {
+      "agentName": "SchedulerAgent",
+      "agentRole": "Scheduler",
+      "startedAt": "8:46:49 PM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "8:46:49 PM",
+      "durationMs": 1
+    }
+  ],
+  "toolCalls": [
+    {
+      "toolName": "parallel_search",
+      "startedAt": "2026-08-15T20:46:21.133Z",
+      "completedAt": "2026-08-15T20:46:23.597Z",
+      "durationMs": 2464,
+      "queryCount": 2,
+      "resultCount": 15,
+      "domains": [
+        "seattle.gov",
+        "seattlebikeblog.com",
+        "library.municode.com",
+        "dronelaunchacademy.com",
+        "app2.apply4.com",
+        "flyusi.org",
+        "seattle.gov",
+        "bottomline.seattle.gov",
+        "portseattle.org",
+        "parks.wa.gov",
+        "seattle.gov",
+        "giggster.com",
+        "seattlegov.zendesk.com",
+        "legalclarity.org",
+        "hilbo.dk"
+      ],
+      "provider": "Parallel",
+      "status": "SUCCESS"
+    }
+  ],
+  "parallelAggregates": {
+    "toolCallCount": 1,
+    "totalQueryCount": 2,
+    "totalRawResults": 15,
+    "uniqueSourceCount": 15
+  },
+  "counts": {
+    "scenes": 2,
+    "characters": 3,
+    "tasks": 16,
+    "researchQuestions": 6,
+    "sources": 15,
+    "realSources": 15,
+    "mockSources": 0,
+    "risks": 8,
+    "shootDays": 2,
+    "orphanSourceIds": 0
+  },
+  "domains": [
+    "seattle.gov",
+    "seattlebikeblog.com",
+    "library.municode.com",
+    "dronelaunchacademy.com",
+    "app2.apply4.com",
+    "flyusi.org",
+    "bottomline.seattle.gov",
+    "portseattle.org",
+    "parks.wa.gov",
+    "giggster.com",
+    "seattlegov.zendesk.com",
+    "legalclarity.org",
+    "hilbo.dk"
+  ],
+  "scheduleValidationPass": true
+}

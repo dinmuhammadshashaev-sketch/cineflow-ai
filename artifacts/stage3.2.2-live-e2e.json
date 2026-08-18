@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-08-12T10:45:32.582Z",
+  "overallStatus": "PARTIAL",
+  "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+  "modelName": "gemini-2.5-flash-lite",
+  "gcpProject": "cineflow-ai-504921",
+  "gcpLocation": "global",
+  "vertexLiveVerified": true,
+  "liveIntegrationStatus": "VERIFIED_PARTIAL",
+  "adkInMemoryRunnerVerified": true,
+  "adkRunAsyncVerified": true,
+  "sequentialAgentVerified": true,
+  "workflowStatus": "FAILED",
+  "blockerCategory": "QUOTA_OR_CAPACITY_BLOCKED",
+  "blockerError": "ADK Workflow execution failed: ADK Agent \"RiskAgent\" error (429): Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.",
+  "durationMs": 47486,
+  "sseCounts": {
+    "WORKFLOW_STARTED": 1,
+    "AGENT_STARTED": 7,
+    "AGENT_COMPLETED": 6,
+    "AGENT_FAILED": 1,
+    "TOOL_STARTED": 1,
+    "TOOL_COMPLETED": 1,
+    "WORKFLOW_COMPLETED": 0,
+    "WORKFLOW_FAILED": 1
+  },
+  "agents": [
+    {
+      "agentName": "SupervisorAgent",
+      "agentRole": "Supervisor",
+      "startedAt": "10:44:46 AM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "10:44:50 AM",
+      "durationMs": 3138
+    },
+    {
+      "agentName": "Script AnalystAgent",
+      "agentRole": "Script Analyst",
+      "startedAt": "10:44:50 AM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "10:44:52 AM",
+      "durationMs": 2816
+    },
+    {
+      "agentName": "DirectorAgent",
+      "agentRole": "Director",
+      "startedAt": "10:44:52 AM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "10:45:04 AM",
+      "durationMs": 12091
+    },
+    {
+      "agentName": "ProducerAgent",
+      "agentRole": "Producer",
+      "startedAt": "10:45:04 AM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "10:45:06 AM",
+      "durationMs": 1219
+    },
+    {
+      "agentName": "ResearchAgent",
+      "agentRole": "Research",
+      "startedAt": "10:45:06 AM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "10:45:19 AM",
+      "durationMs": 13556
+    },
+    {
+      "agentName": "ContinuityAgent",
+      "agentRole": "Continuity",
+      "startedAt": "10:45:19 AM",
+      "status": "COMPLETED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI",
+      "completedAt": "10:45:32 AM",
+      "durationMs": 12877
+    },
+    {
+      "agentName": "RiskAgent",
+      "agentRole": "Risk",
+      "startedAt": "10:45:32 AM",
+      "status": "FAILED",
+      "modelName": "gemini-2.5-flash-lite",
+      "runtimeMode": "GOOGLE_ADK_VERTEX_AI"
+    }
+  ],
+  "toolCalls": [
+    {
+      "toolName": "parallel_search",
+      "startedAt": "2026-08-12T10:45:06.129Z",
+      "completedAt": "2026-08-12T10:45:08.579Z",
+      "durationMs": 2450,
+      "queryCount": 2,
+      "resultCount": 16,
+      "domains": [
+        "giggster.com",
+        "seattle.gov",
+        "seattle.gov",
+        "seattlebikeblog.com",
+        "flyusi.org",
+        "drone-laws.com",
+        "giggster.com",
+        "portseattle.org",
+        "dronesgator.com",
+        "nexttools.net",
+        "seattle.gov",
+        "seattle.gov",
+        "sdotblog.seattle.gov",
+        "kingcounty.gov",
+        "content.govdelivery.com",
+        "hilbo.dk"
+      ],
+      "provider": "Parallel",
+      "status": "SUCCESS"
+    }
+  ],
+  "parallelAggregates": {
+    "toolCallCount": 1,
+    "totalQueryCount": 2,
+    "totalRawResults": 16,
+    "uniqueSourceCount": 16
+  },
+  "counts": {
+    "scenes": 2,
+    "characters": 3,
+    "tasks": 15,
+    "researchQuestions": 6,
+    "sources": 16,
+    "realSources": 16,
+    "mockSources": 0,
+    "risks": 0,
+    "shootDays": 0,
+    "orphanSourceIds": 0
+  },
+  "domains": [
+    "giggster.com",
+    "seattle.gov",
+    "seattlebikeblog.com",
+    "flyusi.org",
+    "drone-laws.com",
+    "portseattle.org",
+    "dronesgator.com",
+    "nexttools.net",
+    "sdotblog.seattle.gov",
+    "kingcounty.gov",
+    "content.govdelivery.com",
+    "hilbo.dk"
+  ],
+  "scheduleValidationPass": false
+}
