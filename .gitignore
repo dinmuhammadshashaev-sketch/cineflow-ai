@@ -1,0 +1,19 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+
+# Environment and key files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+!.env.example
+
+*.pem
+*.key
+credentials.json
+service-account*.json
